@@ -5,7 +5,6 @@ import { Dashboard, Details } from '../pages';
 
 const Container = () => {
   const { pathname } = useLocation();
-  // const id = pathname.split('/')[1];
 
   return (
     <Switch>

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders 1`] = `
+<Switch>
+  <Route
+    exact={true}
+    path="/"
+  >
+    <div
+      className="sc-pFZIQ kabEES"
+    >
+      <Link
+        className="sc-bdfBwQ CdKhw"
+        to="/1"
+      >
+        <div
+          className="sc-gsTCUz fOxzTe"
+        >
+          <img
+            height="56"
+            src="spacex_logo_square.png"
+            width="56"
+          />
+          <div
+            className="sc-hKgILt cVPoMr"
+          >
+            <p
+              className="sc-eCssSg liPRvx"
+            />
+            <p
+              className="sc-dlfnbm NlWAF"
+            >
+              Aug 31st 2020, 12:18:00 am
+            </p>
+          </div>
+        </div>
+        <div>
+          <p
+            className="sc-jSgupP sc-gKsewC bPHQOa eOGKIx"
+          >
+            Failed
+          </p>
+        </div>
+      </Link>
+    </div>
+  </Route>
+  <Route
+    path="/:id"
+  >
+    <div
+      className="sc-jrAGrp ktGWEx"
+    >
+      <p
+        className="sc-iqHYGH ghVZyH"
+      >
+        Rocket name: 
+      </p>
+      <p
+        className="sc-kEjbxe bipcXF"
+      >
+        Rocket type: 
+      </p>
+      <p
+        className="sc-kEjbxe bipcXF"
+      >
+        Reused: 
+        No
+      </p>
+    </div>
+  </Route>
+</Switch>
+`;

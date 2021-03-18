@@ -1,3 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Details renders 1`] = `"loading"`;
+exports[`Details renders 1`] = `
+<div
+  className="sc-bdfBwQ gqnLih"
+>
+  <p
+    className="sc-dlfnbm jduCMG"
+  >
+    Rocket name: 
+  </p>
+  <p
+    className="sc-gsTCUz keqRuK"
+  >
+    Rocket type: 
+  </p>
+  <p
+    className="sc-gsTCUz keqRuK"
+  >
+    Reused: 
+    No
+  </p>
+</div>
+`;

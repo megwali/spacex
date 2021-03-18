@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchCard renders 1`] = `
+<Link
+  className="sc-bdfBwQ CdKhw"
+  to="/1"
+>
+  <div
+    className="sc-gsTCUz fOxzTe"
+  >
+    <img
+      height="56"
+      src="spacex_logo_square.png"
+      width="56"
+    />
+    <div
+      className="sc-hKgILt cVPoMr"
+    >
+      <p
+        className="sc-eCssSg liPRvx"
+      />
+      <p
+        className="sc-dlfnbm NlWAF"
+      >
+        Aug 31st 2020, 12:18:00 am
+      </p>
+    </div>
+  </div>
+  <div>
+    <p
+      className="sc-jSgupP sc-gKsewC bPHQOa eOGKIx"
+    >
+      Failed
+    </p>
+  </div>
+</Link>
+`;

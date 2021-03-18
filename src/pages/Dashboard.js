@@ -14,7 +14,7 @@ const Dashboard = () => {
   return !launches?.length ? 'loading...' : (
     <CardList>
       {launches.map(launch => (
-        <LaunchCard launch={launch} />
+        <LaunchCard key={launch.flight_number} launch={launch} />
       ))}
     </CardList>
   );
