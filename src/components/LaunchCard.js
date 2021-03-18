@@ -1,55 +1,16 @@
-import { Link } from 'react-router-dom';
 import moment from 'moment';
-import styled from 'styled-components';
 
 import defaultImage from '../assets/images/spacex_logo_square.png';
-
-
-const Card = styled(Link)`
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  text-decoration: none;
-`;
-
-const Content = styled.div`
-  align-items: center;
-  display: flex;
-`;
-
-const LaunchDate = styled.p`
-  color: lightgrey;
-  font-size: 14px;
-  font-weight: 500;
-`;
-
-const MissionDetails = styled.div`
-  margin-left: 12px;
-`;
-
-const MissionName = styled.p`
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-`;
-
-const Status = styled.p`
-  font-size: 14px;
-  font-weight: 700;
-`;
-
-const FailedStatus = styled(Status)`
-  color: red;
-`;
-
-const SuccessStatus = styled(Status)`
-  color: green;
-`;
-
-const UpcomingStatus = styled(Status)`
-  color: blue;
-`;
+import {
+  Card,
+  Content,
+  FailedStatus,
+  LaunchDate,
+  MissionDetails,
+  MissionName,
+  SuccessStatus,
+  UpcomingStatus
+} from './styledComponents';
 
 
 const LaunchCard = ({ launch }) => {

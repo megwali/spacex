@@ -1,24 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Details renders 1`] = `
-<div
-  className="sc-bdfBwQ gqnLih"
->
-  <p
-    className="sc-dlfnbm jduCMG"
-  >
+<Card>
+  <RocketName>
     Rocket name: 
-  </p>
-  <p
-    className="sc-gsTCUz keqRuK"
-  >
+  </RocketName>
+  <RocketDetails>
     Rocket type: 
-  </p>
-  <p
-    className="sc-gsTCUz keqRuK"
-  >
+  </RocketDetails>
+  <RocketDetails>
     Reused: 
     No
-  </p>
-</div>
+  </RocketDetails>
+</Card>
 `;

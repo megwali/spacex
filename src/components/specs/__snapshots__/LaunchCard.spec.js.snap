@@ -1,37 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LaunchCard renders 1`] = `
-<Link
-  className="sc-bdfBwQ CdKhw"
+<Card
   to="/1"
 >
-  <div
-    className="sc-gsTCUz fOxzTe"
-  >
+  <Content>
     <img
       height="56"
       src="spacex_logo_square.png"
       width="56"
     />
-    <div
-      className="sc-hKgILt cVPoMr"
-    >
-      <p
-        className="sc-eCssSg liPRvx"
-      />
-      <p
-        className="sc-dlfnbm NlWAF"
-      >
+    <MissionDetails>
+      <MissionName />
+      <LaunchDate>
         Aug 31st 2020, 12:18:00 am
-      </p>
-    </div>
-  </div>
+      </LaunchDate>
+    </MissionDetails>
+  </Content>
   <div>
-    <p
-      className="sc-jSgupP sc-gKsewC bPHQOa eOGKIx"
-    >
+    <FailedStatus>
       Failed
-    </p>
+    </FailedStatus>
   </div>
-</Link>
+</Card>
 `;

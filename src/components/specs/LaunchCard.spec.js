@@ -2,6 +2,16 @@ import { create } from 'react-test-renderer';
 import LaunchCard from '../LaunchCard';
 
 jest.mock('react-router-dom', () => ({ Link: 'Link' }));
+jest.mock('../styledComponents', () => ({
+  Card: 'Card',
+  Content: 'Content',
+  FailedStatus: 'FailedStatus',
+  LaunchDate: 'LaunchDate',
+  MissionDetails: 'MissionDetails',
+  MissionName: 'MissionName',
+  SuccessStatus: 'SuccessStatus',
+  UpcomingStatus: 'UpcomingStatus',
+}));
 
 describe('LaunchCard', () => {
   it ('renders', () => {
