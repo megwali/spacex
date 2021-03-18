@@ -8,6 +8,9 @@ export const Card = styled(Link)`
   justify-content: space-between;
   padding: 10px;
   text-decoration: none;
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 
 export const Content = styled.div`
