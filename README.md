@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# SpaceX
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It does a simple fetch of spaceX rockets from an api `https://api.spacexdata.com/v3/launches` and renders them.
 
