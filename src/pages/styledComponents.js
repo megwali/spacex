@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const CardList = styled.div`
   border: 1px solid lightgrey;
-  margin: auto;
-  max-width: 600px;
   min-height: 60px;
 `;
 
@@ -13,6 +11,7 @@ export const Card = styled(CardList)`
 
 export const Error = styled.p`
   color: red;
+  text-align: center;
 `;
 
 export const Loader = styled.p`
