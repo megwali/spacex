@@ -9,9 +9,11 @@ const Dashboard = () => {
   return (
     <CardList>
       {error && <Error>An error occurred</Error>}
+
       {loading && !launches?.length && (
         <Loader>Loading...</Loader>
       )}
+
       {launches.map(launch => (
         <LaunchCard key={launch.flight_number} launch={launch} />
       ))}
