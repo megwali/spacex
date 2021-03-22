@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchCard renders 1`] = `
+<Card
+  to="/1"
+>
+  <Content>
+    <img
+      height="56"
+      src="spacex_logo_square.png"
+      width="56"
+    />
+    <MissionDetails>
+      <MissionName />
+      <LaunchDate>
+        Aug 31st 2020, 12:18:00 am
+      </LaunchDate>
+    </MissionDetails>
+  </Content>
+  <div>
+    <FailedStatus>
+      Failed
+    </FailedStatus>
+  </div>
+</Card>
+`;

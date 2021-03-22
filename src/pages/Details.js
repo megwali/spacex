@@ -1,29 +1,21 @@
-import styled from 'styled-components';
 import useLaunchList from '../hooks/useLaunchList';
+import { Card, Error, Loader, RocketDetails, RocketName } from './styledComponents';
 
-const Card = styled.div`
-  border: 1px solid lightgrey;
-  padding: 10px;
-`;
-
-const RocketDetails = styled.p`
-  color: lightgrey;
-  font-size: 14px;
-  font-weight: 500;
-`;
-
-const RocketName = styled.p`
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-`;
 
 const Details = ({ id }) => {
-  const [launch] = useLaunchList(id);
+  const { error, launches, loading } = useLaunchList(id);
+
+  const [launch] = launches;
   const { fairings, rocket_name, rocket_type } = launch?.rocket || {};
 
-  return !launch ? 'loading' : (
+  return (
     <Card>
+      {error && <Error>An error occurred</Error>}
+
+      {loading && !launch && (
+        <Loader>Loading...</Loader>
+      )}
+
       <RocketName>Rocket name: {rocket_name}</RocketName>
       <RocketDetails>Rocket type: {rocket_type}</RocketDetails>
       <RocketDetails>Reused: {fairings?.reused ? 'Yes' : 'No'}</RocketDetails>

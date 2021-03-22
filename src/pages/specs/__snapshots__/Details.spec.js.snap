@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Details renders 1`] = `"loading"`;
+exports[`Details renders 1`] = `
+<Card>
+  <RocketName>
+    Rocket name: 
+  </RocketName>
+  <RocketDetails>
+    Rocket type: 
+  </RocketDetails>
+  <RocketDetails>
+    Reused: 
+    No
+  </RocketDetails>
+</Card>
+`;

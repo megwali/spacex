@@ -1,20 +1,21 @@
-import styled from 'styled-components';
 import LaunchCard from '../components/LaunchCard';
 import useLaunchList from '../hooks/useLaunchList';
+import { CardList, Error, Loader } from './styledComponents';
 
-const CardList = styled.div`
-  border: 1px solid lightgrey;
-  margin: auto;
-  max-width: 600px;
-`;
 
 const Dashboard = () => {
-  const launches = useLaunchList();
+  const { error, launches, loading } = useLaunchList();
 
-  return !launches?.length ? 'loading...' : (
+  return (
     <CardList>
-      {launches.map(launch => (
-        <LaunchCard launch={launch} />
+      {error && <Error>An error occurred</Error>}
+
+      {loading && !launches?.length && (
+        <Loader>Loading...</Loader>
+      )}
+
+      {launches.map((launch, index) => (
+        <LaunchCard key={`${launch.flight_number}-${index}`} launch={launch} />
       ))}
     </CardList>
   );

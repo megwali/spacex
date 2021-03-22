@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dashboard renders 1`] = `"loading..."`;
+exports[`Dashboard renders 1`] = `
+<CardList>
+  <LaunchCard
+    launch={
+      Object {
+        "flight_number": 1,
+        "launch_date_local": "2020-08-30T19:18:00-04:00",
+      }
+    }
+  />
+</CardList>
+`;
