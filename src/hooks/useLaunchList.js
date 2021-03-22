@@ -13,7 +13,11 @@ const useLaunchList = (id) => {
       try {
         const response = await fetch(url, { method: 'GET' });
         const data = await response.json();
-        setLaunches(id ? [data] : data);
+        if (data.error) {
+          setError(true);
+        } else {
+          setLaunches(id ? [data] : data);
+        }
       } catch (error) {
         setError(true);
       } finally {

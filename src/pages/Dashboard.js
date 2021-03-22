@@ -14,8 +14,8 @@ const Dashboard = () => {
         <Loader>Loading...</Loader>
       )}
 
-      {launches.map(launch => (
-        <LaunchCard key={launch.flight_number} launch={launch} />
+      {launches.map((launch, index) => (
+        <LaunchCard key={`${launch.flight_number}-${index}`} launch={launch} />
       ))}
     </CardList>
   );
